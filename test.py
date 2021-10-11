@@ -96,8 +96,6 @@ res = requests.request(
         'X-API-KEY': '01234567-89ab-cdef-0123-456789abcdef',
         'Content-Type': 'application/json'
     },
-    data=json.dumps({
-        'datas': [data_id]
-    })
+    data=json.dumps([data_id])
 )
 print(res.text)
